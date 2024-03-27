@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- configuracion de los elementos esenciales que utilizamos, como las funtes de letras, css y el javascript -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIA</title>
+<link rel="stylesheet" href="css/style2.css">
+<script src="js/index.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display+SC:wght@900&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- creamos un div para generar un boton o mas bien un texto que al dar click nos regrese al index inicial -->
+    <div id="div-regresar">
+        <button class="mi-boton"><a href="index.html">Regresar</a></button>
+    </div>
+<!-- con un h1 ponemos el encabezado de la pagina y posicionamos con id en css -->
+    <div>
+        <header>
+            <h1 id="textoencabezado">Fundamentos Desarrollo Web</h1>
+        </header>
+    </div>
+
+<!-- en este div creamos una apartado para colocar los nombres de los integrantes y darles posicionamiento en css -->
+
+    <div id="contenedordelcontenedor">
+        <div id="contenedor">
+                <ol id="lista-horizontal">
+                    <li style="color: rgb(181, 11, 11);">Juan Candia</li>
+                    <li><a href="index3.html">Juan Antonio</a></li>
+                    <li><a href="index4.html">Estefanie Franco</a></li>
+                </ol>
+        </div>
+    </div>
+
+
+<!-- a los hr le agregamos una clase para darles un poco mas de estilo y que resalten los separadores en la pagina -->
+    <hr class="hr1">
+
+    <!-- aqui ya empezamos a programar la pagina a nuestro gusto, agregando clases que vamos definiendo y dejandolo esteticamente en css -->
+    <div class="stylediv">
+        <section class="contenedor">
+            <div>
+                <article class="stylearticle">
+                    <h2 class="titulodelarticle">Tabla</h2>
+                    <!-- el br lo usamos para dejar espacios y que todo tenga un orden -->
+                    <br>
+
+    <!-- muchas de las veces para no saturar tanto de clases utilizamos el mismo comando de style, con el sentido de que solo se usa en una sitacion y no varias veces -->
+                    <table style="margin: auto; width: 80%;" border="5">
+                        <!-- empezamos dandole un poco de color al fondo de las letras de la tabla -->
+                        <tr>
+                            <th style="background-color: rgb(228, 210, 110);">FAMILIA</th>
+                            <th style="background-color: rgb(228, 210, 110);">TRABAJO</th>
+                        </tr>
+        <!-- aqui agregamos imagenes correspondientes y tambien empleamos varios comando para darle el tamaño que queremos y para que no pierda mucha resolucion -->
+                        <tr class="tablapunto3">
+                            <td><img src="assets/candiafamilia.jpeg" width="300px" height="250px" style="object-fit: cover;" alt="candiafamilia"></td>
+                            <td><img src="assets/agua.jpg" width="300px" height="250px" style="object-fit: cover;" alt="agua"></td>
+                        </tr>
+                        <tr class="tablapunto3">
+                            <td style="background-color: rgb(228, 210, 110);">Pasatiempo</td>
+                            <td style="background-color: rgb(228, 210, 110);">Proyecto</td>
+                        </tr>
+                        <tr class="tablapunto3">
+                            <td><img src="assets/candiabeisbol.jpeg" width="300px" height="250px" style="object-fit: cover;" alt="candiabeisbol"></td>
+                            <td><img src="assets/tortilleriaempresarial.jpg" width="300px" height="250px" style="object-fit: cover;" alt="proyectocandia"></td>
+                        </tr>
+                    </table>
+
+                    <p style="text-align: center;">Cada imagen de la tabla representa mis intereses como persona</p>
+
+                    <br>
+                    <hr width="90%" size="1" color="black">
+                    <br>
+
+                </article>
+
+
+                <article class="stylearticle">
+
+                    <p class="estilotextohtml">FORMULARIO</p>
+
+                    <div id="resultados">
+
+         <!-- en el formilario le agregamos un nombre al igual que una identificacion para despues mandarlo a validar en javascript -->
+                        <form id="miFormulario" onsubmit="validarFormulario(event)">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            
+                            <label for="madre">Madre:</label>
+                            <input type="text" name="madre" id="madre" required>
+
+                            <label for="padre">Padre:</label>
+                            <input type="text" name="padre" id="padre" required>
+                    
+                            <label for="trabajo">Trabajo:</label>
+                            <input type="text" id="trabajo" name="trabajo" required>
+                    
+                            <label for="pasatiempo">Pasatiempo:</label>
+                            <input type="text" id="pasatiempo" name="pasatiempo" required>
+                    
+                            <label for="proyecto">Proyecto:</label>
+                            <input type="text" id="proyecto" name="proyecto" required>
+                           
+                 <!-- se crea el boton de enviar dentro de un div para el momento de darle estilo no se combine con el estilo del formulario -->
+                            <div id="contenedorenviar">
+                                <button type="submit">Enviar</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                </article>
+                
+            </div>
+            
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>

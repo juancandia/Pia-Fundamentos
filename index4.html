@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIA</title>
+    <link rel="stylesheet" href="css/style4.css">
+    <script src="js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display+SC:wght@900&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="div-regresar">
+        <button class="mi-boton"><a href="index.html">Regresar</a></button>
+    </div>
+
+    <header>
+        <h1 id="textoencabezado">Fundamentos Desarrollo Web</h1>
+    </header>
+
+    <div id="contenedordelcontenedor">
+        <div id="contenedor">
+                <ol id="lista-horizontal">
+                    <li><a href="index2.html">Juan Candia</a></li>
+                    <li><a href="index3.html">Juan Antonio</a></li>
+                    <li style="color: rgba(157, 108, 170, 0.616);">Estefanie Franco</li>
+                </ol>
+        </div>
+    </div>
+
+    <hr class="hr1">
+
+    <div class="stylediv">
+        <section class="contenedor">
+            <div class="tabla-y-formulario">
+                <article class="stylearticle">
+                    <h2 class="titulodelarticle">Tabla</h2>
+
+                    <br>
+
+                    <table style="margin: auto; width: 80%;" border="5">
+                        <tr>
+                            <th style="background-color: rgba(157, 108, 170, 0.616);">FAMILIA</th>
+                            <th style="background-color: rgba(157, 108, 170, 0.616);">TRABAJO</th>
+                        </tr>
+                        <tr class="tablapunto3">
+                            <td><img src="assets/familiaestefanie.jpeg" width="350px" height="250px" style="object-fit: contain;" alt="mifamilia"></td>
+                            <td><img src="assets/trabajoestefanie.jpeg" width="300px" height="250px" style="object-fit: contain;" alt="mitrabajo"></td>
+                        </tr>
+                        <tr class="tablapunto3">
+                            <td style="background-color: rgba(157, 108, 170, 0.616);">PASATIEMPO</td>
+                            <td style="background-color: rgba(157, 108, 170, 0.616);">PROYECTO</td>
+                        </tr>
+                        <tr class="tablapunto3">
+                            <td><img src="assets/pasatiempoestefanie.jpeg" width="250px" height="250px" style="object-fit: contain;" alt="mipasatiempo"></td>
+                            <td><img src="assets/proyectoestefanie.jpeg" width="250px" height="250px" style="object-fit: contain;" alt="proyectosalonbelleza"></td>
+                        </tr>
+                    </table>
+
+                    <p style="text-align: center;">En la tabla, cada imagen refleja lo que disfruto en mi tiempo libre, mi proyecto empresarial que deseo, mi trabajo actual y, por supuesto, mi familia. Es como un collage visual que ilustra las diferentes áreas de mi vida y lo que considero significativo.</p>
+
+
+
+                </article>
+            </div>
+
+            <div class="tabla-y-formulario">
+                <article class="stylearticle">
+                    <div class="estilotextohtml">
+                        <p id="palabraformulario">FORMULARIO</p>
+                    </div>
+
+
+                    <div id="resultados">
+                        <form id="miFormulario" onsubmit="validarFormulario(event)">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            
+                            <label for="madre">Madre:</label>
+                            <input type="text" name="madre" id="madre" required>
+
+                            <label for="padre">Padre:</label>
+                            <input type="text" name="padre" id="padre" required>
+                    
+                            <label for="trabajo">Trabajo:</label>
+                            <input type="text" id="trabajo" name="trabajo" required>
+                    
+                            <label for="pasatiempo">Pasatiempo:</label>
+                            <input type="text" id="pasatiempo" name="pasatiempo" required>
+                    
+                            <label for="proyecto">Proyecto:</label>
+                            <input type="text" id="proyecto" name="proyecto" required>
+                            
+                            <div id="contenedorenviar">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

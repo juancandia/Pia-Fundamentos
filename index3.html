@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIA</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display+SC:wght@900&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="div-regresar">
+        <button class="mi-boton"><a href="index.html">Regresar</a></button>
+    </div>
+    <div>
+        <header>
+            <h1 id="textoencabezado">Fundamentos Desarrollo Web</h1>
+        </header>
+    </div>
+        <div class="container">
+            <nav class="nav">
+                <a href="index2.html" class="nav-link">Juan Candia</a>
+                <a href="#" class="nav-link active">Juan Antonio</a>
+                <a href="index4.html" class="nav-link">Estefanie Franco</a>
+            </nav>
+        </div>
+    </div>
+    <hr class="separator">
+
+    <section class="container">
+        <div class="grid">
+            <div class="item">
+                <h2 class="section-title">Tabla</h2>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Familia</th>
+                                <th>Trabajo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="assets/familiaantonio.jpeg" alt="Familia" class="table-img"></td>
+                                <td><img src="assets/trabajoantonio.jpeg" alt="Trabajo" class="table-img"></td>
+                            </tr>
+                            <tr>
+                                <td class="category">Pasatiempo</td>
+                                <td class="category">Proyecto</td>
+                            </tr>
+                            <tr>
+                                <td><img src="assets/pastiempoantonio.jpeg" alt="Pasatiempo" class="table-img"></td>
+                                <td><img src="assets/proyectoantonio.jpeg" alt="Proyecto" class="table-img"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="section-description">Cada imagen en la tabla muestra lo que me gusta y las cosas que son importantes para mí. Es como una representación visual de mis hobbies y lo que me interesa.</p>
+            </div>
+
+            <div id="resultados">
+                <h2 class="section-title">Formulario</h2>
+                <div class="form-container">
+                    <form id="miFormulario" onsubmit="validarFormulario(event)">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="madre">Madre:</label>
+                            <input type="text" name="madre" id="madre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="padre">Padre:</label>
+                            <input type="text" name="padre" id="padre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="trabajo">Trabajo:</label>
+                            <input type="text" id="trabajo" name="trabajo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pasatiempo">Pasatiempo:</label>
+                            <input type="text" id="pasatiempo" name="pasatiempo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="proyecto">Proyecto:</label>
+                            <input type="text" id="proyecto" name="proyecto" required>
+                        </div>
+                        <div class="enviarboton">
+                            <button type="submit">Enviar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
